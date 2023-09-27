@@ -8,20 +8,17 @@ import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 import { MatMenuModule} from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './components/app-routing.module';
-
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBar
   ],
   imports: [
     BrowserModule,
     MdbCollapseModule,
     MatMenuModule,
-    BrowserAnimationsModule,
-    NavBar,
-    AppRoutingModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
