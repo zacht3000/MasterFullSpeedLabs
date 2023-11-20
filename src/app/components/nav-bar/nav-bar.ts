@@ -28,6 +28,7 @@ import { RouterModule } from '@angular/router';
   templateUrl: 'nav-bar.html',
   standalone: true,
   imports: [MatButtonModule, MatMenuModule, RouterModule],
+  styleUrls:  ['./nav-bar.css']
 })
 export class NavBar {
   hidden = false;

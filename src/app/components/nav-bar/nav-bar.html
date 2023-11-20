@@ -1,26 +1,30 @@
-<a class="navbar-brand me-2" routerLink="#">
-  <img
-    src="https://i.postimg.cc/2yh5zDmH/logo.png"
-    height="80"
-    alt=""
-    loading="lazy"
-  />
-</a>
-
-<button mat-button routerLink="#">Novedades</button>
-<!-- #docregion menu-position -->
-
-<button mat-button [matMenuTriggerFor]="belowMenu">Catalogo</button>
-<mat-menu #belowMenu="matMenu" yPosition="below">
-  <button mat-menu-item>Deportivos</button>
-  <button mat-menu-item>Superdeportivos </button>
-</mat-menu>
-
-<button mat-button routerLink="#">Garantias</button>
-
-
-<button mat-button routerLink="#">Contacto</button>
-
+<div id="menu" style="border: 5px solid black;">
+  <a id="navLogo" class="navbar-brand me-2" routerLink="#" >
+    <img
+      src="https://i.postimg.cc/2yh5zDmH/logo.png"
+      alt=""
+      loading="lazy"
+      id="logo"
+    />
+  </a>
+  <div>
+    <button mat-button routerLink="#">Novedades</button>
+  <!-- #docregion menu-position -->
+  
+    <button mat-button routerLink="/catalog">Catalogo</button>
+    <!-- <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-menu-item>Deportivos</button>
+      <button mat-menu-item>Superdeportivos </button>
+    </mat-menu> -->
+    
+    <button mat-button routerLink="#">Garantias</button>
+    
+    
+    <button mat-button routerLink="#">Contacto</button>
+  </div>
+  
+  
+</div>
 
 <!-- Copyright 2023 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
