@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DummyComponent } from './dummy/dummy.component';
-import { Catalog } from './catalog/catalog';
+import { CatalogComponent } from './catalog/catalog.component';
+
 
 const routes: Routes = [
-  { path: '#', component: DummyComponent },
-  { path: 'catalog', component: Catalog }
+  { path: '', redirectTo: '/novedades', pathMatch: 'full' },
+  { path: 'novedades', component: DummyComponent},
+  { path: 'catalog', component: CatalogComponent}
 ];
 
 @NgModule({
